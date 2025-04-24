@@ -1,0 +1,124 @@
+/* Simple CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  width: 100vw;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avatar component Styles */
+.avatar {
+
+  width: 128px;
+  height: 128px;
+  background: #f1f1f1;
+  color: #121212;
+  object-fit: contain;
+  object-position: center;
+
+
+
+}
+
+.avatar-circle {
+
+  border-radius: 50%;
+
+}
+
+.avatar-square {
+  border-radius: 2px;
+}
+
+.avatar-sm {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-md {
+  width: 96px;
+  height: 96px;
+}
+
+.avatar-lg {
+  width: 128px;
+  height: 128px;
+}
+
+.avatar-fallback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* Badge component styles */
+.badge {
+  width: fit-content;
+
+  text-wrap: nowrap;
+  border-radius: 100vw;
+  padding: 2px 8px;
+}
+
+.badge-primary {
+  background-color: #DFE1E6;
+  color: #172B4D;
+}
+
+.badge-secondary {
+  background-color: #0052CC;
+  color: #FFFFFF;
+}
+
+.badge-important {
+  background-color: #DE350B;
+  color: #FFFFFF;
+}
+
+/* Banner component Styles */
+.banner {
+  width: 100%;
+  min-height: 52px;
+  padding: 10px;
+  display: grid;
+  place-content: center;
+}
+
+.banner-default {
+  background-color: #FFAB00;
+  color: #253858;
+}
+
+.banner-announcement {
+  background-color: #42526E;
+  color: #FFFFFF;
+}
+
+.banner-error {
+  background-color: #DE350B;
+  color: #FFFFFF;
+}
